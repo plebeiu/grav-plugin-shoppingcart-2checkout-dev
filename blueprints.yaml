@@ -1,0 +1,51 @@
+name: Shoppingcart 2checkout Addon
+version: 0.0.1
+description: "Adding 2checkout (hosted checkout) functionality to gravcart"
+icon: shopping-cart
+author:
+  name: Jaime Lee
+  email: weput@outlook.com 
+homepage: https://github.com/weput/grav-plugin-shoppingcart-2checkout-dev
+keywords: grav, plugin, etc
+license: MIT
+
+
+dependencies:
+  - { name: shoppingcart, version: '~1.1' }
+  
+form:
+  validation: loose
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+        
+    payment.methods.twocheckout.sandbox:
+      type: toggle
+      label: 2checkout Sandbox
+      highlight: 1
+      default: 1
+      options:
+        1: yes
+        0: no
+      validate:
+        type: bool
+
+    payment.methods.twocheckout.name:
+      type: hidden
+      default: 'twocheckout'
+      
+    payment.methods.twocheckout.sellerID:
+      type: text
+      default: ''
+      label: 2checkout Seller ID
+      size: medium
+      placeholder: Your 2ChecOut SELLER ID.
+      help: The 2checkout Seller ID.

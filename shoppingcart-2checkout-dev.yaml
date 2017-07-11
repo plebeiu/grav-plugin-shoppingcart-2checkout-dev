@@ -1,0 +1,8 @@
+enabled: true
+
+payment:
+    methods:
+        twocheckout:
+            name: '2checkout'
+            sellerID: '' #seller ID
+
