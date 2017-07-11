@@ -170,7 +170,7 @@ jQuery(function() {
         cardPhone = document.createElement('input');
             cardPhone.setAttribute('type', 'hidden');
             cardPhone.setAttribute('name', 'phone')
-            cardPhone.setAttribute('value', cart.data.phone);
+            cardPhone.setAttribute('value', cart.data.telephone);
             formSrc.appendChild(cardPhone);
 
 
