@@ -18,8 +18,6 @@ You should now have all the plugin files under
 
 ### Configuration
 
-Before configuring this plugin, you should copy the `user/plugins/shoppingcart-2checkout-dev/shoppingcart-2checkout-dev.yaml` to `user/config/plugins/shoppingcart-2checkout-dev.yaml` and only edit that copy.
-
 Here is the default configuration and an explanation of available options:
 
 ```yaml
